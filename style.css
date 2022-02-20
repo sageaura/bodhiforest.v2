@@ -111,13 +111,16 @@ nav ul li a:hover {
     }
 
     .navbarMenu.active {
-        background: #3d405b;
+        background: #72769b;
         top: 100%;
         opacity: 1;
         transition: all 0.5 ease;
         z-index: 99;
-        height: 60vh;
+        height: 64.8vh;
         font-size: 1.6rem;
+    }
+    .navbarMenu a{
+        color: #C8ECFA;
     }
 
     .logo{
@@ -163,7 +166,4 @@ nav ul li a:hover {
     #mobileMenu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-
-
-
 }
