@@ -1,7 +1,8 @@
+/* #B1D2CA */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
     scroll-behavior: smooth;
 }
 
-.navBar{
+.navBar {
     background: #C8ECFA;
     height: 80px;
     display: flex;
@@ -22,7 +23,7 @@
     z-index: 1000;
 }
 
-.navbarContainer{
+.navbarContainer {
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -33,7 +34,7 @@
     padding: 0 50px;
 }
 
-.logo{
+.logo {
     color: #3d405b;
     text-decoration: none;
     font-size: 1.5rem;
@@ -44,7 +45,7 @@
     font-weight: bolder;
 }
 
-.logo:hover{
+.logo:hover {
     background: #fefae090;
     padding: 5px 0;
     border-radius: 3px;
@@ -54,18 +55,18 @@
     transition: all 0.3s;
 }
 
-.navbarMenu{
+.navbarMenu {
     display: flex;
     align-items: center;
     list-style: none;
 }
 
-.navbarItem{
+.navbarItem {
     height: 80px;
 }
 
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     padding: 6px 15px;
     color: #283618;
@@ -119,51 +120,165 @@ nav ul li a:hover {
         height: 64.8vh;
         font-size: 1.6rem;
     }
-    .navbarMenu a{
+
+    .navbarMenu a {
         color: #C8ECFA;
     }
 
-    .logo{
+    .logo {
         padding-left: 25px;
     }
-    
-    .navbarItem{
+
+    .navbarItem {
         width: 100%;
     }
 
-    .navbarLinks{
+    .navbarLinks {
         text-align: center;
         padding: 2rem;
         width: 100%;
         display: table;
     }
-/* formatting the toggle bar to make three lines */
+
+    /* formatting the toggle bar to make three lines */
     .navbarToggle .bar {
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        transition: all 0,3s ease-in-out;
+        transition: all 0, 3s ease-in-out;
         background: cadetblue;
         display: block;
         cursor: pointer;
     }
-/* positioning the hamburger menu in the navbar */
-    #mobileMenu{
+
+    /* positioning the hamburger menu in the navbar */
+    #mobileMenu {
         position: absolute;
         top: 20%;
         right: 5%;
-        transform: translate(5%,20%);
+        transform: translate(5%, 20%);
     }
-/* making the second div disappear */
-    #mobileMenu.is-active .bar:nth-child(2){
+
+    /* making the second div disappear */
+    #mobileMenu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
-/* rotating the 1st div clockwise to make the cross */
-    #mobileMenu.is-active .bar:nth-child(1){
+
+    /* rotating the 1st div clockwise to make the cross */
+    #mobileMenu.is-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-/* rotating the 3rd div anti-clockwise to make the cross */
-    #mobileMenu.is-active .bar:nth-child(3){
+
+    /* rotating the 3rd div anti-clockwise to make the cross */
+    #mobileMenu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+/* main content */
+
+.main {
+    background-image: url(./img/mountain.jpg);
+    width: 100%;
+    height: 900px;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 4rem;
+    position: absolute;
+    color: #fefae0;
+    letter-spacing: 4px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #d6b09b;
+    color: #72769b;
+    font-size: 1.5em;
+    transform: translateY(100px);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: #f7dac6;
+    color: #3d405b;
+    font-size: 2rem;
+    padding: 10px 35px;
+    font-weight: 700;
+}
+
+.moon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translateX(-320px);
+    top: 10rem;
+}
+
+/* mobile adjustment for main */
+@media screen and (max-width: 768px) {
+    .moon {
+        width: 80px;
+        height: 80px;
+        transform: translateX(-150px);
+        top: 8rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}
+
+/* about section */
+.about {
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    transform: translateY(-150px);
+    background-color: #a4c9e0;
+}
+
+.welcome{
+
+}
+.welcomeTitle {
+    font-size: 3em;
+}
+
+
+.journeyBtn {}
+
+.img2 {
+    background-image: url(./img/watercolournature.jpg);
+    width: 100%;
+    height: 900px;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 }
