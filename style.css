@@ -1,0 +1,398 @@
+/* #B1D2CA */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navBar {
+    background: #C8ECFA;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.logo {
+    color: #3d405b;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.logo:hover {
+    background: #fefae090;
+    padding: 5px 0;
+    border-radius: 3px;
+    font-size: 1.51rem;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.navbarMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbarItem {
+    height: 80px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #283618;
+    cursor: pointer;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #f7dac690;
+    border-radius: 3px;
+    font-size: 1.2rem;
+}
+
+/* adding the slide out menu bar for mobile view */
+@media screen and (max-width:960px) {
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbarMenu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5 ease;
+        z-index: -1;
+        background: #3d405b;
+    }
+
+    .navbarMenu.active {
+        background: #72769b;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5 ease;
+        z-index: 99;
+        height: 65vh;
+        font-size: 1.2rem;
+    }
+
+    .navbarMenu a {
+        color: #C8ECFA;
+    }
+
+    .logo {
+        margin-left: 30rem;
+    }
+
+    .logo:hover {
+        background: #fefae090;
+        padding: 3px;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        transition: all 0.3s;
+        margin-left: 30rem;
+    }
+
+    .navbarItem {
+        width: 100%;
+    }
+
+    .navbarLinks {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    /* formatting the toggle bar to make three lines */
+    .navbarToggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0, 3s ease-in-out;
+        background: cadetblue;
+        display: block;
+        cursor: pointer;
+    }
+
+    /* positioning the hamburger menu in the navbar */
+    #mobileMenu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    /* making the second div disappear */
+    #mobileMenu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    /* rotating the 1st div clockwise to make the cross */
+    #mobileMenu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    /* rotating the 3rd div anti-clockwise to make the cross */
+    #mobileMenu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* main content */
+
+.main {
+    background-image: url(./img/mountain.jpg);
+    width: 100%;
+    height: 900px;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 4rem;
+    position: absolute;
+    color: #fefae0;
+    letter-spacing: 4px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #d6b09b;
+    font-size: 1.5em;
+    transform: translateY(100px);
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #72769b;
+}
+
+.btn:hover {
+    background: #f7dac6;
+    color: #3d405b;
+    font-size: 2rem;
+    padding: 10px 35px;
+    font-weight: 700;
+}
+
+.moon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translateX(-320px);
+    top: 10rem;
+}
+
+/* mobile adjustment for main */
+@media screen and (max-width: 768px) {
+    .moon {
+        width: 80px;
+        height: 80px;
+        transform: translateX(-130px);
+        top: 8rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}
+
+/* about section */
+.about {
+    width: 100%;
+    height: 30rem;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    transform: translateY(10px);
+    background: #2980B9;
+    background: -webkit-linear-gradient(to top, #FFFFFF, #dae8f0, #c5d7e6, #dae8f0, #FFFFFF);
+    background: linear-gradient(to top, #FFFFFF, #dae8f0, #c5d7e6, #dae8f0, #FFFFFF);
+    /* background-imgae: linear-gradient */
+}
+
+.welcome {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcomeTitle {
+    font-size: 3em;
+    padding: 20px;
+    color: #03045e;
+    font-weight: 800;
+}
+
+.welcome p {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem 15rem;
+}
+
+.journeyBtn {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #d6b09b;
+    color: #72769b;
+    font-size: 1.5em;
+    transform: translateY(100px);
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    margin-top: -60px;
+}
+
+.journeyBtn a {
+    text-decoration: none;
+    color: #72769b;
+}
+
+.journeyBtn:hover {
+    background: #f7dac6;
+    color: #3d405b;
+    font-size: 2rem;
+    padding: 10px 35px;
+    font-weight: 700;
+}
+
+.img2 {
+    background-image: url(./img/watercolournature.jpg);
+    width: 100%;
+    height: 900px;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        height: 20rem;
+    }
+
+    .welcomeTitle {
+        font-size: 2em;
+    }
+
+    .welcome p {
+        font-size: 1rem;
+        padding: 1rem 7rem;
+        margin-top: -7px;
+    }
+
+    .journeyBtn {
+        text-decoration: none;
+        padding: 8px 30px;
+        border-radius: 40px;
+        background: #d6b09b;
+        color: #72769b;
+        font-size: 1em;
+        transform: translateY(100px);
+        cursor: pointer;
+        font-weight: 700;
+        border: none;
+        margin-top: -90px;
+    }
+
+    .journeyBtn:hover {
+        background: #f7dac6;
+        color: #3d405b;
+        font-size: 1.2em;
+        padding: 10px 35px;
+        font-weight: 700;
+    }
+}
+
+/* pathways */
+
+.pathway {
+    width: 100%;
+    height: 60rem;
+    background-color: #d87bae; 
+}
+
+.pathwayTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    padding: 20px;
+    color: #03045e;
+    font-weight: 800;
+}
+
+.gallery{
+    display: flex;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
