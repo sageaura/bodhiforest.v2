@@ -10,7 +10,7 @@
 }
 
 .navBar{
-    background: #EEF9FD;
+    background: #C8ECFA;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -156,11 +156,11 @@ nav ul li a:hover {
         opacity: 0;
     }
 /* rotating the 1st div clockwise to make the cross */
-    #mobileMenu.is-active .bar:nth-child(2){
+    #mobileMenu.is-active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
-/* rotating the 2nd div anti-clockwise to make the cross */
-    #mobileMenu.is-active .bar:nth-child(2){
+/* rotating the 3rd div anti-clockwise to make the cross */
+    #mobileMenu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
 
