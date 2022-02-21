@@ -17,3 +17,15 @@ if (menu) {
       menu.addEventListener('click', mobileMenu);
 };
 
+// showing active menu when scrolling
+// not sure about let or const but hey
+const logo = document.querySelector('.logo');
+
+if (logo) {
+      let highlightMenu = () =>{
+
+      }
+}
+
+
+// remember to activate the .highlight
