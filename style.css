@@ -10,6 +10,7 @@
     scroll-behavior: smooth;
 }
 
+/* navbar */
 .navBar {
     background: #C8ECFA;
     height: 80px;
@@ -17,7 +18,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -48,7 +49,6 @@
     background: #fefae090;
     padding: 5px 0;
     border-radius: 3px;
-    font-size: 1.51rem;
     margin: 15px 0;
     letter-spacing: 1px;
     transition: all 0.3s;
@@ -136,7 +136,7 @@ nav ul li a:hover {
     nav ul li a {
         color: #316a94;
         height: 80%;
-        font-size: 2remgit status;
+        font-size: 2rem;
         font-weight: 900;
     }
 
@@ -147,8 +147,10 @@ nav ul li a:hover {
     }
 
     .logo {
-        margin-left: 22rem;
-        font-size: 3rem;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
     }
 
     .logo:hover {
@@ -242,6 +244,7 @@ nav ul li a:hover {
 .btn a {
     text-decoration: none;
     color: #72769b;
+    transition: all 1s ease-in-out;
 }
 
 .btn:hover {
@@ -280,6 +283,7 @@ nav ul li a:hover {
     max-width: 100%;
     width: 100%;
     height: 50% auto;
+    display: flex;
     flex-direction: column;
     margin: 0 auto;
     background: #2980B9;
@@ -297,7 +301,7 @@ nav ul li a:hover {
 
 .welcomeTitle {
     font-size: 3em;
-    padding: 30px;
+    padding: 20px;
     color: #03045e;
     font-weight: 800;
 }
@@ -306,21 +310,22 @@ nav ul li a:hover {
     font-size: 2rem;
     text-align: center;
     font-weight: 600;
-    padding: 2rem 15rem;
+    padding: 2em 15em;
 }
 
 .journeyBtn {
     text-decoration: none;
-    padding: 2rem 30px;
+    padding: 16px 30px;
     border-radius: 40px;
     background: #ffd6ff;
     color: #72769b;
-    font-size: 2em;
+    font-size: 1.5em;
     transform: translateY(100px);
     cursor: pointer;
     font-weight: 700;
     border: none;
     margin-top: -60px;
+    transition: all 1s ease-in-out;
 }
 
 .journeyBtn a {
@@ -331,8 +336,8 @@ nav ul li a:hover {
 .journeyBtn:hover {
     background: #c8b6ff;
     color: #1e6091;
-    font-size: 2.2rem;
-    padding: 2.5rem 35px;
+    font-size: 1.8em;
+    padding: 18px 35px;
     font-weight: 700;
 }
 
@@ -372,32 +377,9 @@ nav ul li a:hover {
         margin-top: -7px;
     }
 
-    .journeyBtn {
-        text-decoration: none;
-        padding: 8px 30px;
-        border-radius: 40px;
-        background: #ffd6ff;
-        color: #72769b;
-        font-size: 1.5em;
-        transform: translateY(100px);
-        cursor: pointer;
-        font-weight: 700;
-        border: none;
-        margin-top: -70px;
-    }
-
-    .journeyBtn:hover {
-        background: #c8b6ff;
-        color: #3d405b;
-        font-size: 2em;
-        padding: 10px 35px;
-        font-weight: 700;
-    }
-
     .arrow {
         font-size: 2.5em;
-        color: #53516E;
-        margin-top: 6rem;
+        margin-top: 5rem;
     }
 }
 
