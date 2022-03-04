@@ -295,6 +295,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 7rem;
 }
 
 .welcomeTitle {
@@ -308,7 +309,7 @@ nav ul li a:hover {
     font-size: 2rem;
     text-align: center;
     font-weight: 600;
-    padding: 2em 15em;
+    padding: 2em 11em;
 }
 
 .journeyBtn {
@@ -341,7 +342,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3.2em;
+    font-size: 3em;
     color: #53516E;
     margin-top: 7rem;
 }
@@ -378,7 +379,7 @@ nav ul li a:hover {
 
     .arrow {
         font-size: 1.8em;
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 
     .journeyBtn {
@@ -402,7 +403,7 @@ nav ul li a:hover {
     color: #03045e;
     font-weight: 800;
     background: #FFFFFF;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .gallery {
