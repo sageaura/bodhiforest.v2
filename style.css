@@ -93,11 +93,7 @@ nav ul li a:hover {
 /* adding the slide out menu bar for mobile view */
 @media screen and (max-width:960px) {
     .navbarContainer {
-        display: flex;
-        justify-content: space-between;
         height: 90px;
-        z-index: 1;
-        width: 100%;
         max-width: 1300px;
         padding: 0;
     }
@@ -147,15 +143,14 @@ nav ul li a:hover {
     }
 
     .logo {
-        display: block;
+        display: flex;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         font-size: 1rem;
     }
 
     .logo:hover {
-        margin-left: 22rem;
-        font-size: 3rem;
+        font-size: 1.2rem;
     }
 
     .navbarItem {
@@ -274,7 +269,7 @@ nav ul li a:hover {
     }
 
     .title {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
@@ -368,18 +363,27 @@ nav ul li a:hover {
     }
 
     .welcomeTitle {
-        font-size: 2em;
+        font-size: 1.3em;
     }
 
     .welcome p {
-        font-size: 1.2rem;
-        padding: 1rem 7rem;
-        margin-top: -7px;
+        font-size: 1rem;
+        padding: 1em 4.5em;
     }
 
     .arrow {
         font-size: 2.5em;
         margin-top: 5rem;
+    }
+    .journeyBtn {
+        padding: 10px 20px;
+        font-size: 1.2em;
+        transform: translateY(80px);
+    }
+    
+    .journeyBtn:hover {
+        font-size: 1.5em;
+        /* padding: 18px 35px; */
     }
 }
 
