@@ -313,7 +313,7 @@ nav ul li a:hover {
 
 .journeyBtn {
     text-decoration: none;
-    padding: 16px 30px;
+    padding: 16px 20px;
     border-radius: 40px;
     background: #ffd6ff;
     color: #72769b;
@@ -335,7 +335,6 @@ nav ul li a:hover {
     background: #c8b6ff;
     color: #1e6091;
     font-size: 2em;
-    font-weight: 700;
 }
 
 .arrow {
